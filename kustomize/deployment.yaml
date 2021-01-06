@@ -1,7 +1,10 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: DaemonSet
 metadata:
   name: podinfo
+  namespacvec: podinfo
+  labels:
+    app: podinfo
 spec:
   minReadySeconds: 3
   revisionHistoryLimit: 5
