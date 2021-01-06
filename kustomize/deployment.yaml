@@ -2,9 +2,6 @@ apiVersion: apps/v1
 kind: DaemonSet
 metadata:
   name: podinfo
-  namespace: podinfo
-  labels:
-    app: podinfo
 spec:
   selector:
     matchLabels:
